@@ -46,10 +46,13 @@ from flask import Flask, redirect, jsonify, request
 from werkzeug.exceptions import HTTPException, BadRequest, InternalServerError, NotFound
 from typing import Union, Dict, Any, List, Tuple
 
+# Para el type hinting
 JSONType = Union[str, int, float, bool, None, Dict[str, Any], List[Any]]
 
+# Inicialización de la app
 app = Flask(__name__)
 
+# Diccionario de usuarios
 users = {
     1: 'Marcos',
     2: 'Paula',
@@ -64,7 +67,7 @@ def http_error_handler(e: HTTPException) -> Tuple[JSONType, int]:
 
     Parameters
     ----------
-    e : Exception
+    e : HTTPException
         Puede ser cualquier excepción del módulo werkzeug.exceptions. 
         Por ejemplo, BadRequest, InternalServerError, NotFound, etc
 
@@ -144,7 +147,7 @@ def convert_to_int(num: str) -> int:
     Parameters
     ----------
     num : str
-        Es el número que se dea convertir a entero
+        Es el número que se desea convertir a entero
 
     Returns
     -------
@@ -222,7 +225,7 @@ def concatenate() -> JSONType:
     json 
         Devuelve la concatenación, en formato JSON, de los
         valores, de tipo string, de los parámetros 'cad1' y 'cad2'.
-        El mensaje tiene la estrcutura {'concatenation': cad1+cad2}
+        El mensaje tiene la estructura {'concatenation': cad1+cad2}
 
     Raises
     ------

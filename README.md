@@ -10,10 +10,10 @@ Cuenta con los siguientes endpoints:
 
 - GET /options/: muestra los métodos más comunes que pueden utilizarse en una API REST. Además, especifica los errores que puede devovler esta API REST en concreto.
 - GET /sayhello/: devuelve el saludo 'hola'
-- GET /calculate/<num>: calcula el cuadrado del número que se ha pasado en la URL
+- GET /calculate/\<num\>: calcula el cuadrado del número que se ha pasado en la URL
 - GET /calculate/: acepta el parámetro 'num' (ha de ser un número). Calcula el cuadrado del número pasado como parámetro.
 - GET /concatenate/: acepta los parámetros 'cad1' y 'cad2'. Estos parámetros han de ser de tipo string. Concatena ambos parámetros.
-- GET /users/<id>: dado un 'id' (en la url) obtiene y devuelve el usuario con ese id.
+- GET /users/\<id\>: dado un 'id' (en la url) obtiene y devuelve el usuario con ese id.
 
 
 ## 3. Cliente

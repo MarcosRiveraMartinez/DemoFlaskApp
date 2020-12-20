@@ -202,11 +202,11 @@ class APIChecker:
     
     Methods
     -------
-    check_get_requests(self, urls, params)
+    check_get_requests(urls, params)
         Permite hacer varias peticiones con el método GET
         a la lista de urls especificada. Tambien imprime los
         resultados de cada una de las peticiones.
-    check_post_requests(self, urls, data)
+    check_post_requests(urls, data)
         Permite hacer varias peticiones con el método POST
         a la lista de urls especificada. Tambien imprime los
         resultados de cada una de las peticiones.
